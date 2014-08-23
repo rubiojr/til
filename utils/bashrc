@@ -1,0 +1,10 @@
+# nice til snippet for your ~/.bashrc
+til(){
+  TIL_DIR=~/Work/github/til
+  TIL=til-`date +%F`.md 
+  EDITOR=${EDITOR:-vim}
+
+  cd "$TIL_DIR"
+  [ -f "$TIL" ] || echo "# TIL `date +%F`" > til-`date +%F`.md
+  vim $TIL
+}
