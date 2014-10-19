@@ -23,3 +23,7 @@ Open the "Sound Preferences" application. In the hardware tab, select the UE BOO
 Select the output device to you be "UE BOOM" in the "Sound Preferences" application.
 
 ![](/images/soud-prefs-harware-ueboom.png)
+
+## References
+
+* https://wiki.archlinux.org/index.php/Bluetooth_headset#A2DP_via_Bluez5.2FPulseaudio
