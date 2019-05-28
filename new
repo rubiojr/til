@@ -1,0 +1,15 @@
+#!/bin/bash
+
+day="$(date +%d)"
+month="$(date +%m)"
+year="$(date +%Y)"
+date="$year-$month-$day"
+
+file="$year/$month/$day.md"
+
+mkdir -p "$year/$month"
+
+echo "# $date" >> "$file"
+echo "## New TIL here" >> "$file"
+git add "$file"
+vim "$file"
